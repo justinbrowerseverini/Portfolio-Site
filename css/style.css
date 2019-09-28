@@ -54,7 +54,7 @@ a {
     color: #913a30;
   }
   .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block; 
     background-color: #1f4a84;
     color: #ffffff !important; /* needed to override the default link color */
     font-weight: 400;
@@ -76,8 +76,93 @@ a {
             color: #1f4a84 !important;
             text-transform: uppercase;
             border: 2px solid #1f4a84;
+            margin: 15px 0;
           }
           .button.contact:hover {
             background-color: #1f4a84;
             color: #ffffff !important;
           }
+                /*Layout Styling*/
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.68);
+-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.68);
+box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.68);
+position: fixed;
+}
+main{
+  padding-top: 133px;
+}
+.container {
+  padding: 0 15px;
+}
+img.logo {
+  width: 65px;
+  height: 75px;
+  margin: 15px 0 0 0;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  width: 100%;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #252525
+}
+nav > ul > li > a:visited {
+  color: #44520b;
+}
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+nav > ul > li > a:active {
+  text-decoration-line: line-through;
+}
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: .67em 0;
+}
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.row {
+  margin: 25px 0;
+}
+footer{
+  text-align: center
+}
+.social.media {
+  display: inline-block;
+}
+#aboutme h1 {
+  text-align: center;
+  margin: 0;
+  padding: .67em 0;
+}
+#aboutme {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#inktank h1 {
+  text-align: center;
+  margin: 0;
+  padding: .67em 0;
+}
+#inktank {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
