@@ -25,11 +25,13 @@ body {
   h2 {
     font-size: 2.25em;
     font-weight: 700;
+    text-align: center;
   }
   
   h3 {
     font-size: 1.75em;
     font-weight: 500;
+    text-align: center;
   }
   h4 {
     font-size: 1.35em;
@@ -58,12 +60,13 @@ a {
     background-color: #1f4a84;
     color: #ffffff !important; /* needed to override the default link color */
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #1f4a84; /* width of the border, type, color */
     transition: 0.2s opacity;
   }
-   .button:hover {
+  .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
       }
@@ -84,7 +87,7 @@ a {
           }
                 /*Layout Styling*/
 header {
-  background-color: #ffffff;
+  background-color: #ffffffff;
   text-align: center;
   padding: 10px 0;
   width: 100%;
@@ -166,3 +169,90 @@ footer{
   display: inline-block;
   width: 100%;
 }
+.container {
+  max-width: 1200;
+  margin-left: auto;
+  margin-right: auto;
+}
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0 240px);}
+  to {transform: translate(200px 240px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* Medium Devices (640px and and larger)*/
+@media only screen and (min-width:640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 20px; 
+  }
+  #hero {
+    text-align: center;
+    display: block;
+  }
+  body {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float:left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about-page h3: {
+    margin-top: 0;
+  }
+  #skillstools {
+    text-align: center;
+  }
+}
+/* Large Devices (1024px and and larger)*/
+@media only screen and (min-width:1024px) {
+  body {
+    font-size: 22px;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+}
+/* X-Large Devices (1440px and and larger)*/
+@media only screen and (min-width:1440px) {
+  body {
+    font-size: 26px
+  }
+}
+
