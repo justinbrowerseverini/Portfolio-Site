@@ -144,7 +144,8 @@ nav > ul > li > a:active {
   margin: 25px 0;
 }
 footer{
-  text-align: center
+  text-align: center;
+  padding: 7%;
 }
 .social.media {
   display: inline-block;
@@ -174,10 +175,30 @@ footer{
   margin-left: auto;
   margin-right: auto;
 }
+.pride-marker {
+  font-size: 12px;
+}
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+.project-wrapper {
+  padding: 10px;
+}
+.headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.resume {
+  text-align: center;
+  text-decoration: underline;
+}
+#skillstools {
+  text-align: center;
+  padding-top: 7%;
 }
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -188,8 +209,8 @@ footer{
   animation: 4s color-change infinite alternate linear;
 }
 @keyframes cloud-move {
-  from {transform: translate(0 240px);}
-  to {transform: translate(200px 240px);}
+  from {transform: translate(0,240px);}
+  to {transform: translate(200px,240px);}
 }
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
@@ -230,11 +251,24 @@ footer{
     clear: both;
     display: table;
   }
-  #about-page h3: {
+  #about-page h3 {
     margin-top: 0;
   }
-  #skillstools {
-    text-align: center;
+  .image-2 {
+    width: 50%;
+    float: left;
+  }
+  .image-3 {
+    width: 33.3%;
+    float: left;
+  }
+  .image-4 {
+    width: 25%;
+    float: left;
+  }
+  .image-6 {
+    width: 16.6%;
+    float: left;
   }
 }
 /* Large Devices (1024px and and larger)*/
