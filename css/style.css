@@ -88,8 +88,7 @@ a {
                 /*Layout Styling*/
 header {
   background-color: #ffffffff;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   width: 100%;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.68);
 -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.68);
@@ -97,7 +96,7 @@ box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.68);
 position: fixed;
 }
 main{
-  padding-top: 133px;
+  padding-top: 70px;
 }
 .container {
   padding: 0 15px;
@@ -106,14 +105,12 @@ img.logo {
   width: 65px;
   height: 75px;
   margin: 15px 0 0 0;
+  padding-left: 10px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
-  width: 100%;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -200,6 +197,30 @@ footer{
   text-align: center;
   padding-top: 7%;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  font-size: 25px;
+  padding-right: 10px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #252525;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -227,6 +248,9 @@ footer{
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+  main{
+    padding-top: 100px;
   }
   nav {
     width: auto;
@@ -269,6 +293,18 @@ footer{
   .image-6 {
     width: 16.6%;
     float: left;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  nav > ul {
+    margin: 1em 0;
   }
 }
 /* Large Devices (1024px and and larger)*/

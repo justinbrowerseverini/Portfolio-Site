@@ -16,24 +16,25 @@
 <link rel="mask-icon" href="favicon.ico" color="#000000">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-
+<script src="https://kit.fontawesome.com/7c9fd7e96b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <div class="container">
-                <img class="logo" 
-                src="img/logo/logo.png" 
-                alt="JBS UX Logo">
-                <nav>
-                    <ul>
-                         <li>
-                                <a href="index.html">Work</a>
-                                <a href="about.html">About</a>
-                                <a href="inktank.html">Featured Project</a>
-                                <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="container">
+                        <div class="navtoggle" id="myNavtoggle">
+                                        <img class="logo" src="img/logo/logo.png" alt="JBS UX Logo">
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                    <a href="index.html">Work</a>
+                                                    <a href="about.html">About</a>
+                                                    <a href="inktank.html">Featured Project</a>
+                                                    <a href="#contact" onclick="menuToggle()">Contact</a>
+                                                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    </div>
             </div>
         </header>
         <main>
@@ -332,6 +333,7 @@
 </div>
 </div>
         </footer>
+        <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
 </body>
 </html>
