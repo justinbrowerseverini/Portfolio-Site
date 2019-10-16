@@ -116,7 +116,8 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #252525
+  color: #252525;
+  text-align: right;
 }
 nav > ul > li > a:visited {
   color: #44520b;
@@ -214,13 +215,14 @@ footer{
   padding: 24px 0 0;
 }
 .navtoggle.responsive li  {
-  display: block;
+  display: grid;
   padding: 10px 0;
   border-top: 1px solid #252525;
 }
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
 }
+
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
