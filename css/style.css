@@ -61,16 +61,6 @@ a:focus {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-a:visited {
-  /* visited link */
-  color: #44520b;
-}
-
-a:active {
-  /* selected link */
-  color: #913a30;
-}
-
 .button {
   display: inline-block;
   background-color: #1f4a84;
@@ -83,13 +73,8 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-
 .button:active {
-  background-color: #44520b;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -104,6 +89,7 @@ a:active {
 .button.contact:hover {
   background-color: #1f4a84;
   color: #fff !important;
+  text-decoration: none;
 }
 
 /* Layout Styling */
@@ -144,10 +130,6 @@ nav > ul > li > a {
   font-weight: 700;
   color: #252525;
   text-align: right;
-}
-
-nav > ul > li > a:visited {
-  color: #44520b;
 }
 
 nav > ul > li > a:hover {
